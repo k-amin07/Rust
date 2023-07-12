@@ -1,4 +1,0 @@
-[submodule "rustlings"]
-	path = rustlings
-	url = https://github.com/k-amin07/rustlings
-	branch = main
