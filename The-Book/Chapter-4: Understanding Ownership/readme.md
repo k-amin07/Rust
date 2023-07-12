@@ -1,0 +1,1 @@
+Chapter 4 deals with Ownership and memory safety.
