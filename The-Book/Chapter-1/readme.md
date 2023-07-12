@@ -1,0 +1,1 @@
+Chapter 1 of the book deals with setting up rust and getting familiar with cargo

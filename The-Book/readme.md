@@ -1,0 +1,1 @@
+Learnings from each chapter of the book (The Rust Programming Language \[[pdf](https://lise-henry.github.io/books/trpl2.pdf)\]) categorized into corresponding folders. (So far,) Each folder contains the projects directory with code relevant to the chapter.

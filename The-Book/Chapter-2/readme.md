@@ -1,0 +1,1 @@
+Chapter 2 creates a simple program that takes user input and produces some output.

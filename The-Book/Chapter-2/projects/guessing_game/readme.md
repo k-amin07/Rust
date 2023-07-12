@@ -1,0 +1,14 @@
+- `std` library is similar to std namespace in C++. `io::stdin` and `io::stdout` is like using `std::cout`/`std::cin` in C++.
+- We can skip the `use std::io` line but then we'd have to `std::io::stdin` and `std::io::stdout` instead for input and output respectively.
+- Variables are declared using `let`.
+- Variables are immutable by default, the `mut` keyword makes them mutable.
+- Comments start with a double forward slash (`//`)
+- In line 6 `String::new()`, `::` indicates that `new` is an associated function of the `String` type. Other languages call this a static method.
+- `let mut guess = String::new();` line has created a mutable variable that is currently bound to a new, empty instance of `String`.
+- We use `stdin().read_line()` to read input from the user. We pass a mutable reference of the `guess` variable to the function. Without `mut`, the reference is immutable by default. Therefore we write `&mut guess` instead of `&guess`.
+- The read_line() function stores the user input into the variable passed to it using a mutable reference. This is different from other languages where input operations return the user input. In rust, this function returns a value of `io::Result` type.
+    - Rust has a number of types called `Result` in its standard library, as well as specific versions for submodules, like `io::Result` in this case.
+    - Result types are enums (a type with fixed set of values; the values are called enum's variants).
+    - Result has two variants `Ok` and `Err`. `Ok` indicates that the operation was successful, `Err` is like exceptions. 
+    - Values of Result type has methods defined on them. In this case, `io::Result` has an `expect` method that we can call. If the Result is an Err value, expect will cause the program to crash and display the message that we passed to expect as an argument.
+    - Without expect, the program will compile but cargo will generate a warning `unused Result that must be used` and will suggest something like `let _ = io::stdin().read_line(&mut guess);` to ignore the resulting value.
