@@ -64,6 +64,8 @@ The elements of a tuple can be referenced directly using `.` operator
     let five_hundred = x.0;
     let six_point_four = x.1;
 ```
+The tuple without any values has a special name, unit. This value and its corresponding type are both written () and represent an empty value or an empty return type. Expressions implicitly return the unit value if they don’t return any other value.
+
 On the other hand, all elements of an array must be of the same type.
 ```
     let a = [1,2,3,4,5]; // defaults to i32
