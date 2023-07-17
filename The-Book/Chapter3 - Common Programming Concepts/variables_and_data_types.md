@@ -32,6 +32,8 @@ Although the variables in rust are immutable by default, they are still differen
     - Each type can store numbers from (-2<sup>n-1</sup>) to (2<sup>n-1</sup> - 1).
     - Unsigned types can store numbers from 0 to 2<sup>n</sup> - 1
     - An i8 can store numbers from -128 to 127 and a u8 can store numbers from 0 to 255.
+    - Rust allows numeric types to have suffix like `57u8`.
+    - `_` can be used as a visual separator. `1000` and `1_000` are treated as the same number.
 
 - Rust uses 64 bit floats by default, however, 32 bit floats can also be used. f32 is a single precision float while f64 is a double precision float.
     ```

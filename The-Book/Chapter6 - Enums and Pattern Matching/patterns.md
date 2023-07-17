@@ -1,0 +1,3 @@
+`match` expressions can bind to parts of values that match the pattern. This is how we can extract values out of enum variants.
+
+To demonstrate, we change our `Quarter` variant of `Coin` enum to to hold data inside it. From 1999 to 2008, each of the 50 states of the US had different quarter designs. Refer to the `UsState` enum in [match_control_flow](./projects/match_control_flow/src/main.rs) and the `match` flow.
