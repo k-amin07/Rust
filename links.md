@@ -7,3 +7,6 @@ Use Rustlings exercise alongside chapters from the book. Install Rustlings accor
 
 ![Alt text](image.png)
 (Taken from the video linked above)
+
+Other resources
+- [A Gentle Introduction to Rust](https://stevedonovan.github.io/rust-gentle-intro/)
